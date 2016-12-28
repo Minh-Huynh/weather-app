@@ -7,6 +7,9 @@ var styles = {
   },
   mainInput : {
     marginTop: '150px'
+  },
+  headerLink : {
+  	textDecoration: 'none'
   }
 };
 

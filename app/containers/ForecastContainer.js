@@ -14,7 +14,7 @@ var forecastContainer = React.createClass({
 			weatherData: []
 		}
 	},
-	componentDidUpdate: function (prevProps, prevState) {
+	componentWillReceiveProps: function (prevProps) {
 		console.log("componentDidUpdate");
 		if (prevProps.location.query.city !== this.props.location.query.city) {
 			openWeather.getWeatherData(this.props.location.query.city)
